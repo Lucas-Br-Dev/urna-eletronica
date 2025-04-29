@@ -1,0 +1,88 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.urna {
+    display: grid;
+    width: 1000px;
+    height: 450px;
+    background-color: #ccc;
+    grid-template-columns: 2fr 1fr;
+    border: 20px solid #fff;
+    border-radius: 5px;
+}
+.tela{
+    background-color: #999;
+    border: 10px #000 solid;
+}
+
+.teclado {
+    display: grid;
+    grid-template-columns: repeat(3, 110px);
+    justify-content: center;
+}
+.teclado .funcoes {
+    display: grid;
+    grid-template-columns: repeat(3, 110px);
+    grid-row: 5;
+}
+.teclado .funcoes .botao-operador {
+    font-size: 12px;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 10px;
+    border: #000 2px solid;
+    font-weight: bold;
+    box-shadow: 4px 4px 1px #888;
+}
+.teclado .botao {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 10px;
+    background-color: #000;
+    color: #fff;
+    box-shadow: 4px 4px 1px #888;
+}
+.teclado .botao-zero {
+    grid-row: 4;
+    grid-column: 2 / 3;
+}
+.teclado .branco{
+    background-color: #fff;
+    color: #000;
+}
+.teclado .corrige {
+    background-color: red;
+}
+.teclado .confirma {
+    background-color: green;
+    color: #fff;
+}
+
+.informacoes {
+    height: 85%;
+    background-color: #fff;
+    flex-direction: column;
+}
+
+.orientacoes {
+    border-top: 5px solid #000;
+}
+.mostrar-inform p {
+    margin-left: 5px;
+    line-height: 0px;
+}
