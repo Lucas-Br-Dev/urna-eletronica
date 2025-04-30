@@ -17,8 +17,9 @@ body {
     border: 20px solid #fff;
     border-radius: 5px;
 }
-.tela{
-    background-color: #999;
+
+.tela {
+    background: linear-gradient(90deg ,#FFF, #ccc);
     border: 10px #000 solid;
 }
 
@@ -27,11 +28,13 @@ body {
     grid-template-columns: repeat(3, 110px);
     justify-content: center;
 }
+
 .teclado .funcoes {
     display: grid;
     grid-template-columns: repeat(3, 110px);
     grid-row: 5;
 }
+
 .teclado .funcoes .botao-operador {
     font-size: 12px;
     padding: 5px;
@@ -44,7 +47,13 @@ body {
     border: #000 2px solid;
     font-weight: bold;
     box-shadow: 4px 4px 1px #888;
+    transition: all linear 150ms;
 }
+
+.teclado .funcoes .botao-operador:active {
+    box-shadow: none;
+}
+
 .teclado .botao {
     cursor: pointer;
     display: flex;
@@ -55,34 +64,102 @@ body {
     margin: 10px;
     background-color: #000;
     color: #fff;
-    box-shadow: 4px 4px 1px #888;
+    box-shadow: 4px 4px 1px #777;
+    transition: all linear 150ms;
+}
+.teclado .botao:active{
+    box-shadow:none;
 }
 .teclado .botao-zero {
     grid-row: 4;
     grid-column: 2 / 3;
 }
-.teclado .branco{
+
+.branco {
     background-color: #fff;
     color: #000;
 }
-.teclado .corrige {
+
+.corrige {
     background-color: red;
 }
-.teclado .confirma {
+
+.confirmar {
     background-color: green;
     color: #fff;
 }
 
 .informacoes {
+    display: flex;
+    justify-content: space-between;
     height: 85%;
-    background-color: #fff;
-    flex-direction: column;
 }
 
 .orientacoes {
+    display: flex;
+    align-items: center;
     border-top: 5px solid #000;
+    height: 15%;
 }
+
+.candidato-inform {
+    margin-left: 10px;
+}
+
 .mostrar-inform p {
-    margin-left: 5px;
+    margin-left: 10px;
     line-height: 0px;
+}
+
+.candidato-foto img {
+    width: 220px;
+    height: 200px;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.voto-para {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.etapas {
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 30px;
+}
+
+.vereador, .prefeito {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.caixa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000;
+}
+
+.nome,
+.partido {
+    margin: 15px 0px;
+    font-size: 30px;
+}
+.votoBranco {
+    margin: 50px;
+    font-size: 50px;
+    font-weight: bold;
+}
+.nome,
+.partido,
+.candidato-foto,
+.orientacoes,
+.prefeito,
+.votoBranco {
+    display: none;
 }
