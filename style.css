@@ -18,6 +18,14 @@ body {
     border-radius: 5px;
 }
 
+.fim {
+    width: 100%;
+    height: 100%;
+    font-size: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
 .tela {
     background: linear-gradient(90deg ,#FFF, #ccc);
     border: 10px #000 solid;
@@ -27,6 +35,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 110px);
     justify-content: center;
+    user-select: none;
 }
 
 .teclado .funcoes {
@@ -160,6 +169,7 @@ body {
 .candidato-foto,
 .orientacoes,
 .prefeito,
-.votoBranco {
+.votoBranco,
+.fim {
     display: none;
 }
