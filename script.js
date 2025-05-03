@@ -6,7 +6,7 @@ let nome = document.querySelector('.nome');
 let partido = document.querySelector('.partido');
 let imgEle = document.querySelector('.candidato-foto img');
 let orient = document.querySelector('.orientacoes');
-let etapaAtual = "vereador"
+let etapaAtual = "vereador";
 let votoValido = false;
 let votoBranco = false;
 
@@ -175,5 +175,5 @@ function validarVotos(){
         {etapa:"VEREADOR", voto: votoParaVereador},
         {etapa:"PREFEITO", voto: votoParaPrefeito}
     ];
-    console.log(votoValidado)
+    console.log(votoValidado);
 };
