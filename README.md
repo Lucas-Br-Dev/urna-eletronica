@@ -31,6 +31,7 @@ Mensagens e transições entre etapas com feedback visual, melhorando a experiê
 # Como executar/testar?
 
 Números de teste disponíveis:
+
 Vereador: 11222 ou 11333
 
 Prefeito: 55 ou 66
